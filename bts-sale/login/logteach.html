@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body style="background-color: #dddfe2;">
     <h2 style="text-align: center;" class="section-title">Espace Professeur
     </h2>
 
@@ -42,10 +42,10 @@
 
     <!-- Sign up form -->
     <section class="signup">
-        <div class="container">
+        <div class="container shadow-lg p-3 mb-5 bg-body rounded">
             <div class="signup-content">
                 <div class="signup-form">
-                    <h2 class="form-title">Sign up</h2>
+                    <h2 class="form-title">S'Inscrire</h2>
                     <form method="POST" class="register-form" id="register-form">
                         <div class="form-group">
                             <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -57,20 +57,20 @@
                         </div>
                         <div class="form-group">
                             <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                            <input type="password" name="pass" id="pass" placeholder="Password" />
+                            <input type="password" name="pass" id="pass" placeholder="Mot de passe" />
                         </div>
                         <div class="form-group">
                             <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                            <input type="password" name="re_pass" id="re_pass" placeholder="Répéter le password" />
+                            <input type="password" name="re_pass" id="re_pass" placeholder="Répéter le mot de passe" />
                         </div>
 
                         <div class="form-group form-button">
-                            <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="S'Inscrire" />
                         </div>
                     </form>
                 </div>
                 <div class="signup-image">
-                    <figure><img src="../images/teachspace.jpg" class="img-fluid" alt="sing up image"></figure>
+                    <figure><img src="../images/stuspace.jpg" class="img-fluid" alt="sing up image"></figure>
                     <a href="#login-form" class="signup-image-link">Je suis déja un membre</a>
                 </div>
             </div>
@@ -82,28 +82,28 @@
         <div class="container">
             <div class="signin-content">
                 <div class="signin-image">
-                    <figure><img src="../images/teachspace2.jpg" class="img-fluid" alt="sing up image"></figure>
+                    <figure><img src="../images/studentspace.jpg" class="img-fluid" alt="sing up image"></figure>
                     <a href="#register-form" class="signup-image-link">Créer un compte</a>
                 </div>
 
                 <div class="signin-form">
-                    <h2 class="form-title">Sign in</h2>
+                    <h2 class="form-title">Se Connecter</h2>
                     <form method="POST" class="register-form" id="login-form">
                         <div class="form-group">
-                            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                            <input type="text" name="your_name" id="your_name" placeholder="Nom" />
+                            <label for="your_email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="email" name="your_email" id="your_email" placeholder="Email" />
                         </div>
                         <div class="form-group">
                             <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                            <input type="password" name="your_pass" id="your_pass" placeholder="Password" />
+                            <input type="password" name="your_pass" id="your_pass" placeholder="Mot de passe" />
                         </div>
                         <div class="form-group">
                             <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                            <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember
-                                me</label>
+                            <label for="remember-me"
+                                class="label-agree-term"><span><span></span></span>Enregistrer</label>
                         </div>
                         <div class="form-group form-button">
-                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                            <input type="submit" name="signin" id="signin" class="form-submit" value="Se connecter" />
                         </div>
                     </form>
                 </div>
