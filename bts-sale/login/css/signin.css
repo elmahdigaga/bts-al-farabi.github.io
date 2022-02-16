@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #e6e6e6;
+  background: linear-gradient(rgba(55, 142, 181, 0.8), rgba(55, 142, 181, 0.4));
+  font-family: "Poppins", sans-serif;
+}
+
+.form-signin, .form-signup {
+  width: 100%;
+  max-width: 370px;
+  padding: 10px;
+  margin: auto;
+}
+
+.form-signin, .form-signup .checkbox {
+  font-weight: 400;
+}
+
+.form-signin, .form-signup .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin, .form-signup input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin, .form-signup input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.forgot:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 900px) {
+    .cont {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .form-signin, .form-signup {
+      display: none;
+    }
+}
+
+.switch1, .switch2 {
+  cursor: pointer;
+}

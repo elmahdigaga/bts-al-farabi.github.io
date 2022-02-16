@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Espace Professeurs</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" media="(max-width: 900px)" rel="stylesheet">
+
+  <!-- Custom styles for Mobile Version -->
+  <link href="./css/signin.css" media="(max-width: 900px)" rel="stylesheet">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" media="(min-width: 900px)">
+</head>
+
+<body>
+  <div class="cont">
+    <form action="">
+      <div class="form sign-in">
+
+        <h2>Espace Professeurs</h2>
+        <h3 style="text-align: center;">Connectez-vous</h3>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email">
+        </label>
+
+        <label>
+          <span>Mot de passe</span>
+          <input type="password" name="password">
+        </label>
+
+        <button class="submit" type="button">Se Connecter</button>
+
+        <p class="forgot-pass">Mot de Passe Oublié ?</p>
+
+      </div>
+    </form>
+
+    <div class="sub-cont">
+
+      <div class="img">
+
+        <div class="img-text m-up">
+          <h2>Vous n'avez pas de compte ?</h2>
+          <p>Créez votre compte!</p>
+        </div>
+
+        <div class="img-text m-in">
+          <h2>Vous avez déjà un compte ?</h2>
+          <p>Connectez-vous à votre compte!</p>
+        </div>
+
+        <div class="img-btn">
+          <span class="m-up">S'Inscrire</span>
+          <span class="m-in">Connexion</span>
+        </div>
+
+      </div>
+
+      <form action="">
+        <div class="form sign-up">
+          <h2>Créer un Compte Professeur</h2>
+          <label>
+            <span>Nom</span>
+            <input type="text">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email">
+          </label>
+          <label>
+            <span>Mot de passe</span>
+            <input type="password">
+          </label>
+          <label>
+            <span>Confirmez le mot de passe</span>
+            <input type="password">
+          </label>
+          <button type="button" class="submit">S'inscrire</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Version -->
+  <main class="form-signin text-center shadow-lg bg-white p-5 rounded-3 mt-0">
+    <form>
+      <h1 class="h3 mb-3 fw-bold">Espace Professeurs</h1>
+      <h3 class="h3 mb-3 fw-light">Connectez-vous</h3>
+
+      <div class="form-floating my-1">
+        <input type="email" class="form-control" id="floatingInput" placeholder="nom@exemple.com">
+        <label for="floatingInput">Email</label>
+      </div>
+      <div class="form-floating my-1">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Mot de passe">
+        <label for="floatingPassword">Mot de passe</label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary my-3" type="submit">Se Connecter</button>
+
+      <p class="forgot">Mot de Passe Oublié ?</p>
+
+      <p style="font-size: 0.8rem;">Vous n'avez pas de compte ?<br><span class="text-info switch1">Créez votre
+          compte!</span></p>
+
+    </form>
+  </main>
+
+  <main class="d-none form-signup text-center shadow-lg bg-white p-5 rounded-3">
+    <form>
+      <h1 class="h3 mb-3 fw-bold">Créer un Compte Professeur</h1>
+
+      <div class="form-floating my-1">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Nom">
+        <label for="floatingInput">Nom</label>
+      </div>
+      <div class="form-floating my-1">
+        <input type="email" class="form-control" id="floatingInput" placeholder="nom@exemple.com">
+        <label for="floatingInput">Email</label>
+      </div>
+      <div class="form-floating mt-1">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Mot de passe">
+        <label for="floatingPassword">Mot de passe</label>
+      </div>
+      <div class="form-floating mb-1">
+        <input type="re_password" class="form-control" id="floatingPassword" placeholder="Confirmez le mot de passe">
+        <label for="floatingPassword">Confirmez le mot de passe</label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary my-3" type="submit">S'inscrire</button>
+
+      <p style="font-size: 0.8rem;">Vous avez déjà un compte ?<br><span class="text-info switch2">Connectez-vous à
+          votre
+          compte!</span></p>
+
+    </form>
+  </main>
+
+
+
+  <!-- Switch between login and register Mobile -->
+  <script>
+    const card1 = document.querySelector(".switch1");
+    const card2 = document.querySelector(".switch2");
+
+    card1.addEventListener("click", function (e) {
+      document.querySelector(".form-signin").classList.toggle('d-none');
+      document.querySelector(".form-signup").classList.toggle('d-none');
+    });
+    card2.addEventListener("click", function (e) {
+      document.querySelector(".form-signin").classList.toggle('d-none');
+      document.querySelector(".form-signup").classList.toggle('d-none');
+    });
+  </script>
+  <!-- Switch between login and register -->
+  <script>
+    document.querySelector('.img-btn').addEventListener('click', function () {
+      document.querySelector('.cont').classList.toggle('s-signup')
+    });
+  </script>
+</body>
+
+</html>
