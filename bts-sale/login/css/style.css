@@ -97,6 +97,19 @@ button{
   background: -webkit-linear-gradient(left, rgba(55, 142, 181, 0.8), rgba(55, 142, 181, 0.4));
 }
 
+.rev-submit{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(left, rgba(55, 142, 181, 0.8), rgba(55, 142, 181, 0.4));
+}
+
+.rev-submit:hover{
+  background: -webkit-linear-gradient(left, rgba(55, 142, 181, 0.4), rgba(55, 142, 181, 0.8));
+}
+
 .forgot-pass{
   margin-top: 15px;
   text-align: center;
